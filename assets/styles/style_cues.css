@@ -1,0 +1,50 @@
+:root {
+    /* Color Palette */
+    --text-primary: #2a1e17; /* Primary text color or primary element color */
+    --text-accent: #f25019; /* Accent color for call-to-actions and active states */
+    --text-white: #fff; /* White color for backgrounds or text */
+    --text-grey: #bcbec0; /* Grey color for secondary text or disabled states */
+
+    /* Backgrounds */
+    --bg-opacity-white: rgba(
+        255,
+        255,
+        255,
+        0.3
+    ); /* Semi-transparent white background */
+    --bg-gradient-peach: linear-gradient(
+        90deg,
+        #fedcc5 0%,
+        #feddc6 100%
+    ); /* Peach gradient background */
+
+    /* Typography */
+    --text-xs: 12px; /* Extra small text */
+    --text-sm: 14px; /* Small text */
+    --text-lg: 20px; /* Large text */
+    --text-xl: 38px; /* Extra large text */
+
+    --font-normal: 400; /* Normal font weight */
+    --font-semibold: 600; /* Semi-bold font weight */
+    --font-bold: 700; /* Bold font weight */
+
+    /* Border and Corner Radius */
+    --rounded-sm: 5px; /* Small border radius for buttons, inputs, etc. */
+    --rounded-lg: 40px; /* Large border radius for containers, cards, etc. */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
