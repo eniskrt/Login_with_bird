@@ -31,7 +31,6 @@ body {
 }
 .container .left #banner-1{
     position: absolute;
-    
     object-fit: cover;
     object-position: right;
     transform: rotatey(180deg);
@@ -215,4 +214,45 @@ body {
     top: 120px;
     position: absolute;
     left: 775px;
+}
+@media(max-width:500px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 500px;
+    }
+    .container .right{
+        display: none;
+    }
+    .container .right img{
+        display: none;
+    }
+    .container .left #banner-1{
+        width: 700px;
+        height: auto;
+        left: -200px;
+        top: 0;
+    }
+    .container .left .content-box{
+        margin-left:0 ;
+        width: 400px;
+        height: auto;
+        margin-top: 10rem;
+    }
+    .container .content-box .head{
+        position: relative;
+    }
+    .container .left .content-box .head img{
+        position: absolute;
+        left: 295px;
+        top: 224px;
+    }
 }
